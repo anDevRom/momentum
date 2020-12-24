@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owfont-regular.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="name-question question hidden">
+        <h2 class="name-question__text question-text contenteditable" contenteditable="true">What is your name?</h2>
+    </div>
+    <div class="city-question hidden question">
+        <h2 class="city-question__text question-text contenteditable" contenteditable="true">What is your city?</h2>
+    </div>
+    <div class="main-page hidden">
+        <div class="header">
+            <div class="header__city city-block">
+                <span class="city-block__value contenteditable" contenteditable="true">[City]</span>
+                <!--<button class="city-block__button left-margin button"><=></button>-->
+            </div>
+            <div class="header__temperature temperature-block">
+                <span class="temperature-block__value">-</span>
+                <i class="temperature-block__icon owf left-margin"></i>
+            </div>
+            <div class="header__add-option add-option-block">
+                <span class="add-option-block__humidity add-option-block__elem">Humidity</span>
+                <span class="add-option-block__humidity-value left-margin add-option-block__elem">-</span>
+                <span class="add-option-block__wind add-option-block__elem">Wind</span>
+                <span class="add-option-block__wind-value left-margin add-option-block__elem">-</span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main__top-elem date-time-block">
+                <h3 class="date-block">
+                    <span class="date-block__day-of-week"></span>
+                    <span class="date-block__date"></span>
+                    <span class="date-block__month"></span>
+                </h3>
+                <h1 class="time-block">
+                    <span class="time-block__hours time-block__elem">[Hours]</span>
+                    <span class="time-block__elem">:</span>
+                    <span class="time-block__minutes time-block__elem">[Minutes]</span>
+                    <span class="time-block__elem">:</span>
+                    <span class="time-block__seconds time-block__elem">[Seconds]</span>
+                </h1>
+            </div>
+            <div class="main__bottom-elem user-inf-block">
+                <div class="user-inf-block__greet-block greet-block">
+                    Good
+                    <span class="greet-block__day-part">[Day part]</span>
+                    ,
+                    <span class="greet-block__user-name contenteditable" contenteditable="true">[User name]</span>
+                </div>
+                <span class="user-inf-block__focus contenteditable" contenteditable="true">What is your focus for today?</span>
+            </div>
+        </div>
+        <div class="footer">
+            <button class="footer__change-img button">image</button>
+            <button class="footer__change-quotation button">quotation</button>
+            <p class="quotation-block__text"></p>
+            <p class="quotation-block__author"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
